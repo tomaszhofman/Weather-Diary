@@ -1,0 +1,149 @@
+:root {
+  --color-primary: #ede2dc;
+  --color-black: #0b132a;
+  --color-light-black: #4f5665;
+  --color-white: #ffff;
+  --font-bold: 700;
+  --font-light: 400;
+  --font-medium: 500;
+  --font-family-main: 'Montserrat', sans-serif;
+
+  /* media queries */
+
+  --media-m: 40em;
+  --media-l: 64em;
+  --media-xl: 87.5em;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-main);
+  font-size: var(--font-medium);
+  color: var(--color-light-black);
+  line-height: 1.3;
+  font-weight: 300;
+
+  background: var(--color-primary);
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  border: 1px solid var(--color-black);
+  background: none;
+  font-size: 1.5rem;
+  padding: 9px 24px;
+  text-transform: capitalize;
+  font-weight: var(--font-bold);
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 50px;
+}
+
+input,
+textarea {
+  font-family: inherit;
+  border: none;
+  width: 100%;
+  background: none;
+  font-weight: var(--font-bold);
+  text-align: left;
+  white-space: normal;
+  line-height: 61px;
+  color: #000000;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input {
+  font-size: 16px;
+  font-weight: var(--font-light);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+textarea {
+  padding-top: 10px;
+  font-size: 60px;
+  resize: none;
+  min-height: 150px;
+  mix-blend-mode: overlay;
+}
+
+textarea::placeholder {
+  mix-blend-mode: overlay;
+  color: #000000;
+}
+
+.res-cards {
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  height: 100px;
+}
+
+.card-title {
+  font-size: 4rem;
+  margin: 0;
+  color: var(--color-light-black);
+  line-height: 61px;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.location-heading {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.temp-text {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.alert {
+  font-weight: var(--font-bold);
+  color: hsla(0, 100%, 50%, 0.5);
+  font-size: 1.6rem;
+}
