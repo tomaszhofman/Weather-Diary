@@ -1,4 +1,4 @@
-const API_KEY = '9ddcae7901fe2ea913c39df9a64b06c3';
+const API_KEY = '';
 const baseURL = 'https://api.openweathermap.org/data/2.5/weather?zip=';
 const cardsConteiner = document.querySelector('.res-cards');
 
